@@ -15,7 +15,7 @@ class App < Sinatra::Base
 
   def error_500
     status 500
-    { message: 500 }.to_json
+    { message: "error" }.to_json
   end
 
   post '/trade_info', provides: :json do
